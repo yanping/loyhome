@@ -1,14 +1,8 @@
 		<div class="recent module" align="left">
 				<h3>近期博文</h3>
 				<ol id="recentEntries">
-			{% if page.title %}
-				{% for post in site.related_posts limit:5 %}
-					<li><a href="{{ post.url }}" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }} </a>  </li>
-				{% endfor %}
-			{% else %}
-				{% for post in site.posts limit:5 %}
+				{% for post in site.posts limit:10 %}
 					<li><a href="{{ post.url }}" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }} </a>  </li>
 				{% endfor %}			
-			{% endif %}
 				</ol>
 			</div>
