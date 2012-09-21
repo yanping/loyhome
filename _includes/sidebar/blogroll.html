@@ -1,0 +1,16 @@
+<div id="linklist" class="module">
+					<h3>精彩链接</h3>
+					<li id="linkcat-3038" class="linkcat"><SPAN class=link_ct>有缘相识</span>
+	<ul class='xoxo blogroll'>	
+	{% for link in site.links %}
+		<li>
+			<a href="{{ link.url }}" {% if link.desc %}title="{{ link.desc}}"{% endif %} target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','{{ link.url }}]);">
+				{{ link.name }}
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+</li>
+  
+				
+			</div>	
