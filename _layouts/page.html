@@ -1,3 +1,26 @@
 ---
 layout: default
 ---
+
+<div id="contentColumn">	
+
+			<div class="entry tt-body-category">
+				<div class="entry">
+				      <div class="subject" >
+							<div class="post" id="post-1994">
+								<h2>{{ page.title }}</h2>
+								<ul class="postInfo">
+									<li class="infoDate"><dfn>发布</dfn> {{ page.date | date_to_string }}</li>
+									<li class="infoCategory"><dfn>归类</dfn> 在 <a href="http://www.loyhome.com/category/life/%e6%b8%b8%e6%9d%a5%e6%b8%b8%e5%8e%bb/" title="View all posts in 游来游去" rel="category tag">游来游去</a> </li>
+								</ul>
+							</div>
+							</div>
+
+					
+				
+					<div class="list">
+						{% include disqus.html %}
+					</div>
+				</div>
+		</div>
+</div>

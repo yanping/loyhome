@@ -6,7 +6,7 @@
 <meta name="description" content="落园：专注经济视角下的互联网" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<title>{{ site.title}} |{{ site.description }}</title>
+<title>{{ site.title}} {% if page.title %}&raquo; {{ page.title }}{% endif %}|{{ site.description }}</title>
 
 <link rel="stylesheet" href="{{ site.baseurl}}/style.css" type="text/css" media="screen" />
 <link rel="alternate" type="application/rss+xml" title="落园 RSS Feed" href="http://feed.loyhome.com" />
