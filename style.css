@@ -1214,13 +1214,23 @@ form input:focus, textarea:focus
 	text-align: center;
 	color: #ccc;
 	margin: 1em 0 1em;
+	position: relative;
 }
+
+.paging a.prev {
+    position: absolute;
+    left: 0px;
+}
+
+.paging  a.next {
+    position: absolute;
+    right: 0px;
+}
+
+
 .wp-pagenavi{
 margin-bottom:4.5em;}
-.paging .current{
-}
-.paging a{
-padding-left:5px}
+
 .paging a:link, .paging a:visited
 {
 	color: #999;

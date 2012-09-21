@@ -3,7 +3,7 @@
 # ----------------------- #
 title:            落园
 description:      "专注经济视角下的互联网"
-paginate:         8
+paginate:         3
 permalink: /blog/:year/:month/:day/:title
 
 baseurl: /loyhome
